@@ -1,6 +1,36 @@
+/* Dark mode – comfortable, developer-friendly palette */
+html {
+  background-color: #0d1117;
+}
+
+:root {
+  --bg: #0d1117;
+  --bg-soft: #161b22;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-visited: #a371f7;
+  --code-bg: #21262d;
+  --code-border: #30363d;
+  --heading: #f0f6fc;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 0 10px;
+  margin: 60px auto;
+  max-width: 700px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
 .title {
   text-align: center;
   margin-bottom: 0.2em;
+  color: var(--heading);
+  font-weight: 600;
 }
 
 .subtitle {
@@ -8,20 +38,14 @@
   font-size: medium;
   font-weight: bold;
   margin-top: 0;
+  color: var(--text-muted);
 }
 
-body {
-  line-height: 1.6;
-  font-size: 18px;
-  padding: 0 10px;
-  margin: 60px auto;
-  max-width: 700px;
-}
-
-h2,
 h2,
 h3 {
   line-height: 1.2;
+  color: var(--heading);
+  font-weight: 600;
 }
 
 h2 {
@@ -29,65 +53,39 @@ h2 {
   font-size: 18px;
 }
 
-a:link,
+a:link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
 a:visited {
-  color: blue;
+  color: var(--accent-visited);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 code,
 .code {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.125rem;
+  font-size: 0.9em;
   line-height: 1.6;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 85%;
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 3px;
-}
-.subtitle {
-  text-align: center;
-  font-size: medium;
-  font-weight: bold;
-  margin-top: 0;
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
+  border-radius: 6px;
+  color: var(--text);
 }
 
-body {
-  line-height: 1.6;
-  font-size: 18px;
-  padding: 0 10px;
-  margin: 60px auto;
-  max-width: 700px;
+p,
+li {
+  color: var(--text);
 }
 
-h2,
-h2,
-h3 {
-  line-height: 1.2;
-}
-
-h2 {
-  font-style: italic;
-  font-size: 18px;
-}
-
-a:link,
-a:visited {
-  color: blue;
-}
-
-code,
-.code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.125rem;
-  line-height: 1.6;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 3px;
+.bold-text {
+  color: var(--text-muted);
+  font-weight: 600;
 }
