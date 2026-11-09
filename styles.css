@@ -112,3 +112,14 @@ article p {
 article p:last-child {
   margin-bottom: 0;
 }
+
+blockquote {
+  margin: 0 0 1.25em;
+  padding-left: 1em;
+  border-left: 2px solid var(--code-border);
+  color: var(--text-muted);
+}
+
+blockquote p {
+  margin: 0;
+}
