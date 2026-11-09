@@ -33,6 +33,11 @@ body {
   font-weight: 600;
 }
 
+.title a:link,
+.title a:visited {
+  color: var(--heading);
+}
+
 .subtitle {
   text-align: center;
   font-size: medium;
@@ -88,4 +93,22 @@ li {
 .bold-text {
   color: var(--text-muted);
   font-weight: 600;
+}
+
+ul.centered-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+ul.centered-list li {
+  text-align: left;
+}
+
+article p {
+  margin: 0 0 1em;
+}
+
+article p:last-child {
+  margin-bottom: 0;
 }
