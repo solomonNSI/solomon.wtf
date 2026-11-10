@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Until the last two months, I would never even consider a monorepo.">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <title>trying a monorepo</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="preamble">
+    <h1 class="title"><a href="../">Solomon</a></h1>
+    <h2 class="subtitle" style="margin-bottom: 35px;">17 Oct 2026</h2>
+  </div>
+
+  <article>
+    <h2>Until the last two months, I would never even consider a monorepo.</h2>
+    <p>"Separation of Concerns" is a lesson taught by my seniors and I stood by it until now.</p>
+    <p>With the state of AI now, for some projects, I believe it is time to try a monorepo. We are a team of 8 developers, we have frontend, backend, full stack, data engineers etc. All of them (or at least, most of them) are coding with AI. I don't know if it is fortunate or unfortunate, that's just the way it is.</p>
+    <p>For me as a CTO I had to make a decision.</p>
+    <p>The problem or the bug for me was across all the code there was no consistency of clean code, patterns, best practices, and because of so many PR's keeping the status high was very tough.</p>
+    <p>I tried bun + turbo stack, and it is genuinely impressive. We are using Next.js and I heard Turborepo was acquired by Vercel so I bet they did some magic with caching and all sort of wizardry optimization. I did not have much time to decide between turbo and nx so I just went with turbo cause it is around Vercel, and so is Next.js.</p>
+    <p>While switching I also discovered sops + age, a simple easy to setup solution to share local secrets.</p>
+    <p>The scary thing for me for switching to monorepo was CI/CD and conflicts of code. The latter is not an issue so far, we have 20-30 PR's a day minimum and conflicts are easy to resolve. CI/CD was complex to setup at first but once you figure it out, as everything, it is straightforward.</p>
+    <p>Monorepo allowed me to put code rules, shared node modules, dependency management, and manage all the code from one place. It also made it easier to onboard new devs. When AI agents are writing code, they have more context, and (I hope) they are making less mistakes.</p>
+    <p>Videos that affected my choice are:</p>
+    <ul>
+      <li><a href="https://inv.nadeko.net/watch?v=9iU_IE6vnJ8">https://inv.nadeko.net/watch?v=9iU_IE6vnJ8</a></li>
+      <li><a href="https://inv.nadeko.net/watch?v=SOWx0vhoEGI">https://inv.nadeko.net/watch?v=SOWx0vhoEGI</a></li>
+      <li><a href="https://inv.nadeko.net/watch?v=GNj07Zv_G-Q">https://inv.nadeko.net/watch?v=GNj07Zv_G-Q</a></li>
+      <li><a href="https://inv.nadeko.net/watch?v=_uDvhXK4T3M">https://inv.nadeko.net/watch?v=_uDvhXK4T3M</a></li>
+    </ul>
+  </article>
+</body>
+</html>
